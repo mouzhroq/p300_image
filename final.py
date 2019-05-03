@@ -122,21 +122,3 @@ for i in range (0,8):
 
 plt.show(block=False)  
 plt.savefig('C:\\Users\\Mouzto\\Servicio\\s16-00-02-A-tar.png')     
-
-plt.figure()
-plt.subplot(1,5,1)
-plt.imshow(ntar/abs(ntar).max(),cmap='magma')
-plt.subplot(1,5,2)
-plt.imshow(rk.mean(ntar/abs(ntar).max(),kernel),cmap='magma')
-plt.subplot(1,5,3)
-plt.imshow(rk.median(ntar/abs(ntar).max(),kernel),cmap='magma')
-plt.subplot(1,5,4)
-plt.imshow(rk.gradient(ntar/abs(ntar).max(),kernel),cmap='magma')
-plt.subplot(1,5,5)
-plt.imshow(rk.entropy(ntar/abs(ntar).max(),kernel),cmap='magma')
-plt.show(block=False)  
-#plt.savefig('C:\\Users\\HP desktop\\Desktop\\Servicio\\Imagenes\\s22-00-01-A-ntar.png')            
-
-
-l1 = lines.Line2D([i,i],[0,840])
-plt.axes.Axes.axv(linelinewidth=4, color='r')
